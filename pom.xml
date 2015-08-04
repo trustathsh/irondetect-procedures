@@ -71,7 +71,7 @@
 		<dependency>
 			<groupId>de.hshannover.f4.trust</groupId>
 			<artifactId>irondetect</artifactId>
-			<version>0.0.5</version>
+			<version>0.0.8</version>
 		</dependency>
 
 		<dependency>
