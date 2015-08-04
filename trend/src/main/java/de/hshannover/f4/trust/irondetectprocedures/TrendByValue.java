@@ -38,15 +38,6 @@
  */
 package de.hshannover.f4.trust.irondetectprocedures;
 
-import de.hshannover.f4.trust.ContextParamType;
-import de.hshannover.f4.trust.ContextParameter;
-import de.hshannover.f4.trust.Feature;
-import de.hshannover.f4.trust.TrustLog;
-import de.hshannover.f4.trust.irondetect.model.Context;
-import de.hshannover.f4.trust.irondetect.model.ProcedureResult;
-import de.hshannover.f4.trust.irondetect.procedure.ProcedureResultMapper;
-import de.hshannover.f4.trust.irondetect.procedure.Procedureable;
-import de.hshannover.f4.trust.irondetect.util.Helper;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -56,9 +47,18 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import java.util.logging.Level;
-import org.apache.commons.math3.stat.StatUtils;
+
 import org.apache.commons.math3.stat.regression.SimpleRegression;
 import org.apache.log4j.Logger;
+
+import de.hshannover.f4.trust.irondetect.model.Context;
+import de.hshannover.f4.trust.irondetect.model.ContextParamType;
+import de.hshannover.f4.trust.irondetect.model.ContextParameter;
+import de.hshannover.f4.trust.irondetect.model.Feature;
+import de.hshannover.f4.trust.irondetect.model.ProcedureResult;
+import de.hshannover.f4.trust.irondetect.procedure.ProcedureResultMapper;
+import de.hshannover.f4.trust.irondetect.procedure.Procedureable;
+import de.hshannover.f4.trust.irondetect.util.Helper;
 
 /*
  * Copyright 2012 Trust@FHH.

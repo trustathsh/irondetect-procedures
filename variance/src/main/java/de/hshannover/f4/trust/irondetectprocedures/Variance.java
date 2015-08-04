@@ -38,20 +38,20 @@
  */
 package de.hshannover.f4.trust.irondetectprocedures;
 
+import java.util.Calendar;
 import java.util.List;
 
 import org.apache.commons.math3.stat.StatUtils;
 import org.apache.log4j.Logger;
 
-import de.hshannover.f4.trust.Feature;
-import de.hshannover.f4.trust.FeatureType;
 import de.hshannover.f4.trust.irondetect.model.Context;
+import de.hshannover.f4.trust.irondetect.model.Feature;
+import de.hshannover.f4.trust.irondetect.model.FeatureType;
 import de.hshannover.f4.trust.irondetect.model.ProcedureResult;
 import de.hshannover.f4.trust.irondetect.procedure.ProcedureResultMapper;
 import de.hshannover.f4.trust.irondetect.procedure.ProcedureResultMapper.Boundary;
 import de.hshannover.f4.trust.irondetect.procedure.ProcedureResultMapper.DistanceType;
 import de.hshannover.f4.trust.irondetect.procedure.Procedureable;
-import java.util.Calendar;
 
 
 /**

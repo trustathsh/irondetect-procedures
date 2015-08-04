@@ -7,10 +7,10 @@
  *     | | | |  | |_| \__ \ |_| | (_| |  _  |\__ \|  _  |
  *     |_| |_|   \__,_|___/\__|\ \__,_|_| |_||___/|_| |_|
  *                              \____/
- *  
+ * 
  *  =====================================================
  * 
- * Hochschule Hannover 
+ * Hochschule Hannover
  * (University of Applied Sciences and Arts, Hannover)
  * Faculty IV, Dept. of Computer Science
  * Ricklinger Stadtweg 118, 30459 Hannover, Germany
@@ -18,7 +18,7 @@
  * Email: trust@f4-i.fh-hannover.de
  * Website: http://trust.f4.hs-hannover.de/
  * 
- * This file is part of trend, version 0.0.4, 
+ * This file is part of trend, version 0.0.4,
  * implemented by the Trust@HsH research group at the Hochschule Hannover.
  * %%
  * Copyright (C) 2011 - 2013 Trust@HsH
@@ -38,15 +38,6 @@
  */
 package de.hshannover.f4.trust.irondetectprocedures;
 
-import de.hshannover.f4.trust.ContextParamType;
-import de.hshannover.f4.trust.ContextParameter;
-import de.hshannover.f4.trust.Feature;
-import de.hshannover.f4.trust.TrustLog;
-import de.hshannover.f4.trust.irondetect.model.Context;
-import de.hshannover.f4.trust.irondetect.model.ProcedureResult;
-import de.hshannover.f4.trust.irondetect.procedure.ProcedureResultMapper;
-import de.hshannover.f4.trust.irondetect.procedure.Procedureable;
-import de.hshannover.f4.trust.irondetect.util.Helper;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -56,9 +47,19 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import java.util.logging.Level;
-import org.apache.commons.math3.stat.StatUtils;
+
 import org.apache.commons.math3.stat.regression.SimpleRegression;
 import org.apache.log4j.Logger;
+
+import de.hshannover.f4.trust.irondetect.model.Context;
+import de.hshannover.f4.trust.irondetect.model.ContextParamType;
+import de.hshannover.f4.trust.irondetect.model.ContextParameter;
+import de.hshannover.f4.trust.irondetect.model.Feature;
+import de.hshannover.f4.trust.irondetect.model.ProcedureResult;
+import de.hshannover.f4.trust.irondetect.model.TrustLog;
+import de.hshannover.f4.trust.irondetect.procedure.ProcedureResultMapper;
+import de.hshannover.f4.trust.irondetect.procedure.Procedureable;
+import de.hshannover.f4.trust.irondetect.util.Helper;
 
 /*
  * Copyright 2012 Trust@FHH.

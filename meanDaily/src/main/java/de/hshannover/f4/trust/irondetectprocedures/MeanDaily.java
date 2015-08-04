@@ -7,10 +7,10 @@
  *     | | | |  | |_| \__ \ |_| | (_| |  _  |\__ \|  _  |
  *     |_| |_|   \__,_|___/\__|\ \__,_|_| |_||___/|_| |_|
  *                              \____/
- *  
+ * 
  *  =====================================================
  * 
- * Hochschule Hannover 
+ * Hochschule Hannover
  * (University of Applied Sciences and Arts, Hannover)
  * Faculty IV, Dept. of Computer Science
  * Ricklinger Stadtweg 118, 30459 Hannover, Germany
@@ -18,7 +18,7 @@
  * Email: trust@f4-i.fh-hannover.de
  * Website: http://trust.f4.hs-hannover.de/
  * 
- * This file is part of meanDaily, version 0.0.4, 
+ * This file is part of meanDaily, version 0.0.4,
  * implemented by the Trust@HsH research group at the Hochschule Hannover.
  * %%
  * Copyright (C) 2011 - 2013 Trust@HsH
@@ -38,28 +38,24 @@
  */
 package de.hshannover.f4.trust.irondetectprocedures;
 
-import de.hshannover.f4.trust.ContextParamType;
+import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 import org.apache.commons.math3.stat.StatUtils;
 import org.apache.log4j.Logger;
 
-import de.hshannover.f4.trust.Feature;
-import de.hshannover.f4.trust.FeatureType;
 import de.hshannover.f4.trust.irondetect.model.Context;
+import de.hshannover.f4.trust.irondetect.model.ContextParamType;
+import de.hshannover.f4.trust.irondetect.model.Feature;
 import de.hshannover.f4.trust.irondetect.model.ProcedureResult;
 import de.hshannover.f4.trust.irondetect.procedure.ProcedureResultMapper;
 import de.hshannover.f4.trust.irondetect.procedure.ProcedureResultMapper.Boundary;
 import de.hshannover.f4.trust.irondetect.procedure.ProcedureResultMapper.DistanceType;
 import de.hshannover.f4.trust.irondetect.procedure.Procedureable;
 import de.hshannover.f4.trust.irondetect.util.Helper;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.Date;
-import java.util.HashMap;
-import sun.misc.Compare;
 
 /**
  * A simple mean procedure based on Apache Commons Math. This procedure is able
@@ -182,7 +178,7 @@ public class MeanDaily implements Procedureable {
      * 1.1.2011 to 5.1.2011 would return 5.
      * @param start
      * @param end
-     * @return 
+     * @return
      */
     private int durationInDays(Calendar start, Calendar end){
         int duration = 0;
@@ -201,7 +197,7 @@ public class MeanDaily implements Procedureable {
      * Checks if the two calendar objects refer to the same day. ignores timezones
      * @param c1
      * @param c2
-     * @return 
+     * @return
      */
     private boolean isSameDay(Calendar c1, Calendar c2){
         return c1.get(Calendar.YEAR) == c2.get(Calendar.YEAR) && c1.get(Calendar.DAY_OF_YEAR) == c2.get(Calendar.DAY_OF_YEAR);
