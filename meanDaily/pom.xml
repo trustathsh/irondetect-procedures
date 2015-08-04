@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>de.hshannover.f4.trust</groupId>
 		<artifactId>irondetect-procedures</artifactId>
-		<version>0.0.4</version>
+		<version>0.0.5</version>
 	</parent>
 	<groupId>de.hshannover.f4.trust.irondetectprocedures</groupId>
 	<artifactId>meanDaily</artifactId>
