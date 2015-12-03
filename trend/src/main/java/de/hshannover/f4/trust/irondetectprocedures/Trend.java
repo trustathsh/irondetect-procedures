@@ -7,10 +7,10 @@
  *     | | | |  | |_| \__ \ |_| | (_| |  _  |\__ \|  _  |
  *     |_| |_|   \__,_|___/\__|\ \__,_|_| |_||___/|_| |_|
  *                              \____/
- * 
+ *  
  *  =====================================================
  * 
- * Hochschule Hannover
+ * Hochschule Hannover 
  * (University of Applied Sciences and Arts, Hannover)
  * Faculty IV, Dept. of Computer Science
  * Ricklinger Stadtweg 118, 30459 Hannover, Germany
@@ -18,7 +18,7 @@
  * Email: trust@f4-i.fh-hannover.de
  * Website: http://trust.f4.hs-hannover.de/
  * 
- * This file is part of trend, version 0.0.4,
+ * This file is part of trend, version 0.0.5, 
  * implemented by the Trust@HsH research group at the Hochschule Hannover.
  * %%
  * Copyright (C) 2011 - 2013 Trust@HsH
